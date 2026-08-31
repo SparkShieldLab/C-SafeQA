@@ -149,4 +149,10 @@ Anhui Laboratory for Safe Artificial Intelligence in the Yangtze River Delta は
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/WeChat-Follow_Us-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat公式アカウント" /></a>
 </p>
 
-製品または事業での協業、あるいは研究所への参加にご関心がある方は、[czkuang@xingdun-ai.com](mailto:czkuang@xingdun-ai.com) までご連絡ください。
+<p align="center">
+  <strong>以下のQRコードをスキャンしてWeChatグループに参加してください。</strong>
+</p>
+
+<p align="center">
+  <img src="./assets/wechat-group-qr.jpg" alt="C-SafeQA WeChatグループのQRコード" width="220" />
+</p>

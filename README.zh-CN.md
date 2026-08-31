@@ -149,4 +149,10 @@ C-SafeQA 用于评估和研究安全分类器，不应被视为生成有害内�
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/WeChat-Follow_Us-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="微信公众号" /></a>
 </p>
 
-如有产品或商务合作意向，或希望加入实验室，请联系 [czkuang@xingdun-ai.com](mailto:czkuang@xingdun-ai.com)。
+<p align="center">
+  <strong>扫描下方二维码加入微信群。</strong>
+</p>
+
+<p align="center">
+  <img src="./assets/wechat-group-qr.jpg" alt="C-SafeQA 微信群二维码" width="220" />
+</p>

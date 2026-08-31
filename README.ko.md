@@ -17,7 +17,7 @@
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="논문" /></a>
   <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="코드" /></a>
-  <a href="https://huggingface.co/datasets/YOUR_HF_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="데이터세트" /></a>
+  <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="데이터세트" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="웹사이트" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat 공식 계정" /></a>
 </p>
@@ -55,7 +55,7 @@ C-SafeQA는 4개 평가 대상 언어 모델의 응답을 사용하여 7개의 �
 
 ## 저장소 구성
 
-이 GitHub 저장소는 평가 대상인 7개 안전 가드 모델의 원시 출력을 얻는 데 사용한 추론 실행 스크립트를 공개합니다. 벤치마크 데이터는 [Hugging Face]([HF_DATASET_URL])에서 별도로 제공합니다.
+이 GitHub 저장소는 평가 대상인 7개 안전 가드 모델의 원시 출력을 얻는 데 사용한 추론 실행 스크립트를 공개합니다. 벤치마크 데이터는 [Hugging Face](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA)에서 별도로 제공합니다.
 
 ```text
 code/
@@ -83,12 +83,12 @@ pip install transformers vllm
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("[HF_ORG]/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
 print(dataset)
 print(dataset["base"].features)
 ```
 
-이 릴리스는 `base` 스플릿과 각 평가 대상 모델별 변환 스플릿 하나를 제공합니다. 필드 정의, 콘텐츠 위험, 출처, 허용된 용도는 [데이터세트 카드]([HF_DATASET_URL])를 참조하세요.
+이 릴리스는 `base` 스플릿과 각 평가 대상 모델별 변환 스플릿 하나를 제공합니다. 필드 정의, 콘텐츠 위험, 출처, 허용된 용도는 [데이터세트 카드](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA)를 참조하세요.
 
 ## 안전성 판별기 출력 재현
 

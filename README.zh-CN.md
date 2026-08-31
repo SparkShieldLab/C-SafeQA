@@ -17,7 +17,7 @@
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="论文" /></a>
   <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="代码" /></a>
-  <a href="https://huggingface.co/datasets/YOUR_HF_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="数据集" /></a>
+  <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="数据集" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="网站" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="微信公众号" /></a>
 </p>
@@ -55,7 +55,7 @@ C-SafeQA 使用四个目标语言模型的回复评估七个自动化安全判�
 
 ## 仓库内容
 
-本 GitHub 仓库发布用于获取七个被评估安全防护模型原始输出的推理运行脚本。基准数据在 [Hugging Face]([HF_DATASET_URL]) 上单独发布。
+本 GitHub 仓库发布用于获取七个被评估安全防护模型原始输出的推理运行脚本。基准数据在 [Hugging Face](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA) 上单独发布。
 
 ```text
 code/
@@ -83,12 +83,12 @@ pip install transformers vllm
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("[HF_ORG]/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
 print(dataset)
 print(dataset["base"].features)
 ```
 
-该版本提供一个 `base` 划分，并为每个目标模型提供一个变换数据划分。字段定义、内容风险、数据来源和允许用途请参阅[数据集卡片]([HF_DATASET_URL])。
+该版本提供一个 `base` 划分，并为每个目标模型提供一个变换数据划分。字段定义、内容风险、数据来源和允许用途请参阅[数据集卡片](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA)。
 
 ## 复现安全判别器输出
 

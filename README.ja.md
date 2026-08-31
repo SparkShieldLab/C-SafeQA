@@ -17,7 +17,7 @@
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="論文" /></a>
   <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="コード" /></a>
-  <a href="https://huggingface.co/datasets/YOUR_HF_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="データセット" /></a>
+  <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="データセット" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="ウェブサイト" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat公式アカウント" /></a>
 </p>
@@ -55,7 +55,7 @@ C-SafeQA は、4つの評価対象言語モデルの応答を用いて、7つの
 
 ## リポジトリの内容
 
-この GitHub リポジトリでは、評価対象となる7つの安全性ガードモデルから生の出力を取得するために使用した推論ランナーを公開しています。ベンチマークデータは [Hugging Face]([HF_DATASET_URL]) で別途公開しています。
+この GitHub リポジトリでは、評価対象となる7つの安全性ガードモデルから生の出力を取得するために使用した推論ランナーを公開しています。ベンチマークデータは [Hugging Face](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA) で別途公開しています。
 
 ```text
 code/
@@ -83,12 +83,12 @@ pip install transformers vllm
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("[HF_ORG]/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
 print(dataset)
 print(dataset["base"].features)
 ```
 
-本リリースは `base` スプリットと、評価対象モデルごとに1つの変換スプリットを提供します。フィールド定義、コンテンツリスク、来歴、許可される用途については、[データセットカード]([HF_DATASET_URL])を参照してください。
+本リリースは `base` スプリットと、評価対象モデルごとに1つの変換スプリットを提供します。フィールド定義、コンテンツリスク、来歴、許可される用途については、[データセットカード](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA)を参照してください。
 
 ## 安全性判定器の出力を再現する
 

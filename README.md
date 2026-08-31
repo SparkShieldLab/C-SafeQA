@@ -17,7 +17,7 @@ A policy-grounded benchmark for response-level Chinese safety evaluation.</p>
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="Paper" /></a>
   <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Code" /></a>
-  <a href="https://huggingface.co/datasets/YOUR_HF_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="Dataset" /></a>
+  <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="Dataset" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="Website" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat" /></a>
 </p>
@@ -55,7 +55,7 @@ The evaluated judges are Llama Guard 4, MD-Judge, NeMoGuard, PolyGuard, Qwen3Gua
 
 ## Repository contents
 
-This GitHub repository releases the inference runners used to obtain raw outputs from the seven evaluated safety guard models. The benchmark data are released separately on [Hugging Face]([HF_DATASET_URL]).
+This GitHub repository releases the inference runners used to obtain raw outputs from the seven evaluated safety guard models. The benchmark data are released separately on [Hugging Face](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA).
 
 ```text
 code/
@@ -83,12 +83,12 @@ pip install transformers vllm
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("[HF_ORG]/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
 print(dataset)
 print(dataset["base"].features)
 ```
 
-The release provides a `base` split and one transformed split per target model. See the [Dataset Card]([HF_DATASET_URL]) for field definitions, content risks, provenance, and permitted uses.
+The release provides a `base` split and one transformed split per target model. See the [Dataset Card](https://huggingface.co/datasets/SparkShieldLab/C-SafeQA) for field definitions, content risks, provenance, and permitted uses.
 
 ## Reproduce safety-judge outputs
 

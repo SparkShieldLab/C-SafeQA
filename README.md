@@ -1,8 +1,15 @@
+<p align="center">
+  <strong>English</strong> |
+  <a href="./README.zh-CN.md">简体中文</a> |
+  <a href="./README.ja.md">日本語</a> |
+  <a href="./README.ko.md">한국어</a>
+</p>
+
 # C-SafeQA
 
 <div align="center">
 
-<img src="./assets/C-SafeQA-logo-maximized.svg" alt="C-SafeQA - Who Judges the Judges?" width="100%" />
+<img src="./assets/C-SafeQA-hero-en.jpg" alt="C-SafeQA - Who Judges the Judges?" width="100%" />
 
 <p><strong>Who Judges the Judges?</strong><br />
 A policy-grounded benchmark for response-level Chinese safety evaluation.</p>
@@ -134,7 +141,7 @@ Code in this repository is licensed under [CODE_LICENSE]. The dataset is license
 
 We gratefully acknowledge the support of The Anhui Laboratory for Safe Artificial Intelligence in the Yangtze River Delta.
 
-## About 长三角安全人工智能安徽省实验室
+## About the Anhui Laboratory for Safe Artificial Intelligence in the Yangtze River Delta
 
 The Anhui Laboratory for Safe Artificial Intelligence in the Yangtze River Delta is dedicated to advancing trustworthy and secure artificial intelligence. Our work spans policy-sensitive contexts, model content safety, agent security, and rigorous safety evaluation, with particular depth in addressing complex real-world requirements. We welcome research collaborations and practical partnerships in these areas—please feel free to get in touch through the channels below.
 

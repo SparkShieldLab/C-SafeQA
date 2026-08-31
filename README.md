@@ -16,7 +16,7 @@ A policy-grounded benchmark for response-level Chinese safety evaluation.</p>
 
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="Paper" /></a>
-  <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Code" /></a>
+  <a href="https://github.com/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="Code" /></a>
   <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="Dataset" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="Website" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat" /></a>
@@ -71,7 +71,7 @@ code/
 ## Installation
 
 ```bash
-git clone https://github.com/[ORG]/C-SafeQA.git
+git clone https://github.com/SparkShieldLab/C-SafeQA.git
 cd C-SafeQA
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -121,7 +121,7 @@ C-SafeQA is designed for evaluating and studying safety classifiers. It must not
 
 ## License
 
-Code in this repository is licensed under [CODE_LICENSE]. The dataset is licensed separately under [DATA_LICENSE] and is subject to the terms in its Dataset Card. Third-party model checkpoints and their outputs may have additional terms; users are responsible for complying with them.
+Code in this repository is licensed under the [Apache License 2.0](./LICENSE). The dataset is licensed separately under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) and is subject to the terms in its Dataset Card. Third-party model checkpoints and their outputs may have additional terms; users are responsible for complying with them.
 
 ## Citation
 

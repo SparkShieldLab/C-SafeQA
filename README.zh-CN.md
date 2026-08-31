@@ -16,7 +16,7 @@
 
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="论文" /></a>
-  <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="代码" /></a>
+  <a href="https://github.com/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="代码" /></a>
   <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="数据集" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="网站" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="微信公众号" /></a>
@@ -71,7 +71,7 @@ code/
 ## 安装
 
 ```bash
-git clone https://github.com/[ORG]/C-SafeQA.git
+git clone https://github.com/SparkShieldLab/C-SafeQA.git
 cd C-SafeQA
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -120,7 +120,7 @@ C-SafeQA 用于评估和研究安全分类器，不应被视为生成有害内�
 
 ## 许可证
 
-本仓库代码采用 [CODE_LICENSE] 许可。数据集采用单独的 [DATA_LICENSE] 许可，并受其数据集卡片所列条款约束。第三方模型检查点及其输出可能适用其他条款，用户有责任确保合规使用。
+本仓库代码采用 [Apache License 2.0](./LICENSE) 许可。数据集采用单独的 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) 许可，并受其数据集卡片所列条款约束。第三方模型检查点及其输出可能适用其他条款，用户有责任确保合规使用。
 
 ## 引用
 

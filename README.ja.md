@@ -16,7 +16,7 @@
 
 <p>
   <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="論文" /></a>
-  <a href="https://github.com/YOUR_ORG/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="コード" /></a>
+  <a href="https://github.com/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="コード" /></a>
   <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="データセット" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="ウェブサイト" /></a>
   <a href="https://open.weixin.qq.com/qr/code?username=gh_89d544e1b8aa"><img src="https://img.shields.io/badge/%E5%BE%AE%E4%BF%A1-WeChat-07C160?style=flat-square&amp;logo=wechat&amp;logoColor=white" alt="WeChat公式アカウント" /></a>
@@ -71,7 +71,7 @@ code/
 ## インストール
 
 ```bash
-git clone https://github.com/[ORG]/C-SafeQA.git
+git clone https://github.com/SparkShieldLab/C-SafeQA.git
 cd C-SafeQA
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
@@ -120,7 +120,7 @@ C-SafeQA は、安全性分類器の評価と研究を目的としています�
 
 ## ライセンス
 
-このリポジトリのコードは [CODE_LICENSE] の下で提供されます。データセットは別途 [DATA_LICENSE] の下で提供され、データセットカードに記載された条件に従います。第三者のモデルチェックポイントとその出力には追加条件が適用される場合があり、利用者はそれらを遵守する責任を負います。
+このリポジトリのコードは [Apache License 2.0](./LICENSE) の下で提供されます。データセットは別途 [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) の下で提供され、データセットカードに記載された条件に従います。第三者のモデルチェックポイントとその出力には追加条件が適用される場合があり、利用者はそれらを遵守する責任を負います。
 
 ## 引用
 

@@ -29,7 +29,7 @@
     <g>
       <rect x="486.8" y="303" width="161" height="40" rx="20" fill="#E9FAF6"/>
       <circle cx="500.8" cy="323" r="3.6" fill="#19A99F"/>
-      <text x="509.8" y="328.2" font-family="Calibri, Arial, sans-serif" font-size="13.5" fill="#236C68"><tspan font-weight="700">8,877</tspan><tspan dx="4">adversarial queries</tspan></text>
+      <text x="509.8" y="328.2" font-family="Calibri, Arial, sans-serif" font-size="12.5" fill="#236C68"><tspan font-weight="700">8,877</tspan><tspan dx="4">adversarial queries</tspan></text>
     </g>
   
     <g>

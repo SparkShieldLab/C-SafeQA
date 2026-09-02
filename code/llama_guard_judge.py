@@ -14,7 +14,7 @@ from typing import Any
 
 
 MODEL = "meta-llama/Llama-Guard-4-12B"
-RAW_FIELD = "llama_guard_raw_output"
+RAW_FIELD = "llama_guard_raw"
 
 
 def build_parser() -> argparse.ArgumentParser:

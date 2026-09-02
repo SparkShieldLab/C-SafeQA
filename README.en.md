@@ -51,7 +51,7 @@ The evaluated judges are Llama Guard 4, MD-Judge, NeMoGuard, PolyGuard, Qwen3Gua
 
 The laboratory has built a safety evaluation platform centered on model assets, datasets, evaluation tasks, and report management. It organizes services such as content-safety and jailbreak-attack evaluation into a unified workspace for model providers, application teams, and regulators, supporting model filing, compliance self-assessment, regulatory evaluation, selection and acceptance testing, and R&D validation.
 
-Building on risk categories aligned with national standards, the platform continuously expands its risk knowledge and evaluation data. It covers four levels of risk labels, five risk severity levels, six risk forms, 1,000+ risk knowledge points, and 30+ red-team attack methods, with more than 100,000 high-quality test cases accumulated. Automated evaluation achieves over 95% accuracy in a mode balancing precision and recall, while the high-recall mode can improve manual evaluation efficiency by more than 85%. The platform is now in routine use across industries including office productivity and automotive, supporting model evaluation, targeted risk retesting, and iterative validation to substantially improve evaluation depth and efficiency.
+According to the laboratory's internal evaluation and operational statistics (as of August 2026), the platform aligns its risk categories with national standards while continuously expanding its risk knowledge and evaluation data. It covers four levels of risk labels, five risk severity levels, six risk forms, 1,000+ risk knowledge points, and 30+ red-team attack methods, with more than 100,000 high-quality test cases accumulated. Automated evaluation achieves over 95% accuracy in a mode balancing precision and recall, while the high-recall mode can improve manual evaluation efficiency by more than 85%. The platform is now in routine use across industries including office productivity and automotive, supporting model evaluation, targeted risk retesting, and iterative validation to substantially improve evaluation depth and efficiency.
 
 The following demonstrations show how the platform supports the workflow from task initiation and risk validation to result analysis:
 
@@ -107,15 +107,21 @@ git clone https://github.com/SparkShieldLab/C-SafeQA.git
 cd C-SafeQA
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install transformers vllm
+pip install datasets transformers vllm
 ```
 
 ## Load the data
 
+The dataset uses an access-request workflow. After your request is approved, authenticate with Hugging Face:
+
+```bash
+hf auth login
+```
+
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0", token=True)
 print(dataset)
 print(dataset["base"].features)
 ```

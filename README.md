@@ -51,7 +51,7 @@ C-SafeQA 使用四个目标语言模型的回复评估七个自动化安全判�
 
 实验室构建了一套以模型资产、数据集、评测任务和报告管理为核心的安全评测平台，将内容安全、越狱攻击等评测服务组织成面向模型厂商、应用方和监管机构的统一评测工作台，支撑模型备案、合规自查、监管评估、选型验收和研发验证等场景。
 
-平台在基础风险分类上对齐国标要求，同时在风险知识和评测数据上持续积累：覆盖 4 级风险标签、5 级风险等级、6 类风险形式、1000+ 风险知识点和 30+ 种红队攻击方式，并积累 10 万+高质量测试集；自动化评测在准召兼顾模式下准确率 95% 以上，在高召回模式下可使人工评测效率提升 85% 以上。当前，平台已在办公、汽车等多个行业场景中常态化应用，用于支撑模型评测、风险复测和迭代验证，显著提升评测深度与效率。
+根据实验室内部评测与运营统计（截至 2026 年 8 月），平台在基础风险分类上对齐国标要求，同时在风险知识和评测数据上持续积累：覆盖 4 级风险标签、5 级风险等级、6 类风险形式、1000+ 风险知识点和 30+ 种红队攻击方式，并积累 10 万+高质量测试集；自动化评测在准召兼顾模式下准确率 95% 以上，在高召回模式下可使人工评测效率提升 85% 以上。当前，平台已在办公、汽车等多个行业场景中常态化应用，用于支撑模型评测、风险复测和迭代验证，显著提升评测深度与效率。
 
 以下从任务发起、风险验证到结果分析，展示平台如何承载评测流程：
 
@@ -107,15 +107,21 @@ git clone https://github.com/SparkShieldLab/C-SafeQA.git
 cd C-SafeQA
 python -m venv .venv
 source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install transformers vllm
+pip install datasets transformers vllm
 ```
 
 ## 加载数据
 
+数据集采用申请访问机制。申请获批后，请先登录 Hugging Face：
+
+```bash
+hf auth login
+```
+
 ```python
 from datasets import load_dataset
 
-dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0")
+dataset = load_dataset("SparkShieldLab/C-SafeQA", revision="v1.0.0", token=True)
 print(dataset)
 print(dataset["base"].features)
 ```

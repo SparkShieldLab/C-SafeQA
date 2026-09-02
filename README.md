@@ -15,7 +15,7 @@
 一个基于政策、面向中文回复级安全评估的基准。</p>
 
 <p>
-  <a href="ARXIV_URL"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="论文" /></a>
+  <a href="https://arxiv.org/pdf/2609.01210"><img src="https://img.shields.io/badge/Paper-PDF-B31B1B?style=flat-square&amp;logo=arxiv&amp;logoColor=white" alt="论文" /></a>
   <a href="https://github.com/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&amp;logo=github&amp;logoColor=white" alt="代码" /></a>
   <a href="https://huggingface.co/datasets/SparkShieldLab/C-SafeQA"><img src="https://img.shields.io/badge/Dataset-Hugging_Face-FFD21E?style=flat-square&amp;logo=huggingface&amp;logoColor=black" alt="数据集" /></a>
   <a href="https://sai.xingdun-ai.com/home"><img src="https://img.shields.io/badge/Website-C--SafeQA-1677FF?style=flat-square&amp;logo=googlechrome&amp;logoColor=white" alt="网站" /></a>
@@ -157,14 +157,14 @@ C-SafeQA 用于评估和研究安全分类器，不应被视为生成有害内�
 ## 引用
 
 ```bibtex
-@misc{csafeqa2026,
-  title        = {WHO JUDGES THE JUDGES? A CHINESE SAFETY QA BENCHMARK FOR EVALUATING LLM RESPONSES AND SAFETY JUDGES},
-  author       = {Ziqi Zhao and Qingzhong Yan and Yuhang Sun and Rui Yang and Shuang Huang and Junhua Liu and Cong Liu and Guoping Hu and Jing Shao},
-  year         = {2026},
-  eprint       = {[ARXIV_ID]},
-  archivePrefix= {arXiv},
-  primaryClass = {[ARXIV_PRIMARY_CLASS]},
-  url          = {https://arxiv.org/abs/[ARXIV_ID]}
+@misc{yang2026judgesjudgeschinesesafety,
+  title         = {Who Judges the Judges? A Chinese Safety QA Benchmark for Evaluating LLM Responses and Safety Judges},
+  author        = {Rui Yang and Shuang Huang and Junhua Liu and Ziqi Zhao and Qingzhong Yan and Yuhang Sun and Cong Liu and Guoping Hu and Rui Mei and Jing Shao},
+  year          = {2026},
+  eprint        = {2609.01210},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CR},
+  url           = {https://arxiv.org/abs/2609.01210}
 }
 ```
 

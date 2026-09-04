@@ -192,5 +192,5 @@ C-SafeQA 用于评估和研究安全分类器，不应被视为生成有害内�
 </p>
 
 <p align="center">
-  <img src="./assets/wechat-group-qr.jpg" alt="C-SafeQA 微信群二维码" width="220" />
+  <img src="./assets/wechat-group-qr.png" alt="C-SafeQA 微信群二维码" width="220" />
 </p>

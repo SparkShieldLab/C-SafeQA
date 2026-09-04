@@ -193,5 +193,5 @@ The Anhui Laboratory for Safe Artificial Intelligence in the Yangtze River Delta
 </p>
 
 <p align="center">
-  <img src="./assets/wechat-group-qr.jpg" alt="C-SafeQA WeChat group QR code" width="220" />
+  <img src="./assets/wechat-group-qr.png" alt="C-SafeQA WeChat group QR code" width="220" />
 </p>
